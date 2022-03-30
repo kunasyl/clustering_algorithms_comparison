@@ -1,0 +1,56 @@
+MATLAB -> PYTHON CODE
+
+Xneg -> healthy_df 		      | healthy dataframe
+nneg -> nneg  			      | number of columns in healthy_df
+NamNeg -> healthy_names 	      | file names of healthy_df
+NamN -> unique_healthy_names 	      | unique file names of healthy_df
+iN -> iN 			      | index of unique file names from 0 till 45
+nFiles -> n_files    		      | number of unique files in healthy_df
+	Xneg = healthy_df.iloc[:,:31] | healthy_df feautures
+Xpos -> 
+XposProbC -> insult_32_feature	      | 32 feature of insult_df
+XposProbM -> insult_33_feature	      | 33 feature of insult_df
+Lprob -> big_prob_33_feature          | logical array where insult_33_feature>0.05
+YP0 -> Y_pos_0                        | concat of insult 33 feature and zeros of len 2108
+NamPos -> insult_names                | all file names of insult_df
+	Xpos = insult_df[:,:31]
+npos -> npos			      | number pf columns in insult_df
+NamP -> unique_insult_names           | unique file names in insult_df
+iP -> iP                              | index of unique files of insult_df
+Nam0 -> indexes			      | pos and neg indexes of unique files
+X0 -> X0			      | concatenation of Xpos and Xneg
+mu -> mu			      | mean of X0 by columns
+sig -> sig			      | std of X0 by columns
+n -> n				      | npos + nneg
+Y1M0 -> Y1M0                          | вероятности больных по маскам
+Povtor
+Qual -> qual_1			      | quality metric 1
+Qual2 -> qual_2			      | quality metric 2
+nCertf -> n_certain_files	      | number of certain files (без неточностей)
+UnCf -> n_uncertain_files             | number of uncertain files (содержащие неточности)
+testF -> n_test_files                 | количество контрольных снимков		
+inp -> inp			      | 
+indF -> ind_files                     | 
+inp -> inp			      | 
+Nam -> new_indexes                    | new indexes (1,2,...,46,0)
+tesTest -> tes_test                   | какие объекты в последних снимках
+nTest0 -> n_test_0		      | сколько объектов в контрольных снимках
+tesUnc -> tes_uncertain               | какие объекты в неточной выборке
+nUnC -> n_uncertain                   | сколько объектов в неточной выборке
+tesC -> tes_certain                   | какие объекты в точной выборке
+nCert -> n_certain                    | сколько объектов в точной выборке
+YP -> Y_pos                           | new Y (с перестановкой)
+Y1M -> Y1M                            | содержит инф об уверенно классиф больных с p=1
+ind1 -> ind_insult                    | уверенно класс-е как больные
+ind2 -> ind_healthy                   | уверенно класс-е как здоровые
+indCert -> ind_certain                | 4958 уверенно классифицированных данных
+Y10Tr -> Y10Tr                        |
+Y1MC -> Y1MC
+YTrueTest -> Y_true_test              | 
+Y10Tr2 -> Y10Tr2
+indUnCert -> ind_uncertain            | not ind_certain
+sigma -> sigma
+bet -> bet
+mmax -> mmax
+
+
